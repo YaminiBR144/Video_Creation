@@ -90,13 +90,13 @@ def create_video(image_files, duplicate_count, fps, audio_path):
     output_filename = "output_video.mp4"
     final_clip.write_videofile(output_filename, codec="libx264", audio_codec="aac")
     return output_filename
-  # --- 3. STREAMLIT UI LOGIC ---
+    # --- 3. STREAMLIT UI LOGIC ---
 
 st.set_page_config(page_title="PragyanAI Video Creator", layout="wide")
 
 # Display logo if it exists
-if os.path.exists("Screenshot (1).png"):
-    st.image("Screenshot (1).png")
+if os.path.exists("Screenshot(1).png"):
+    st.image("Screenshot(1).png")
 
 st.title("PragyanAI - Multimedia Merger")
 st.markdown("Upload multiple images, specify timing, and add audio from a file or YouTube.")
