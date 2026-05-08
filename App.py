@@ -162,7 +162,4 @@ if st.button("🚀 Create & Play Video", use_container_width=True):
             st.error(f"An error occurred: {e}")
     else:
         st.warning("Please ensure images are uploaded and audio is 'Loaded and Ready'.")
-    
-    output_filename = "output_video.mp4"
-    final_clip.write_videofile(output_filename, codec="libx264", audio_codec="aac")
-    return output_filename
+
